@@ -1,0 +1,74 @@
+.modal-90w {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
+}
+/* src/Modal.css */
+/* src/Modal.css */
+.flipbook-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure space is distributed */
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.modal-90w {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  flex: 1; /* Allow the document to take available space */
+}
+
+.toolbar {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Fix the toolbar to the bottom */
+  bottom: 0; /* Align it to the bottom */
+  left: 0; /* Align it to the left */
+  right: 0; /* Align it to the right */
+  background-color: #fff; /* Optional: set background color */
+  padding: 10px; /* Add some padding */
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+}
+
+.toolbar button {
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.toolbar button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.toolbar button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
